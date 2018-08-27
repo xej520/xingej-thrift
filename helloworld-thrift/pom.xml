@@ -13,6 +13,8 @@
         <module>msg-thrift-service</module>
         <module>single-msg-thrift-server</module>
         <module>single-msg-thrift-client</module>
+        <module>threadpool-msg-thrift-server</module>
+        <module>threadpool-msg-thrift-client</module>
     </modules>
 
 
