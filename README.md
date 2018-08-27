@@ -1,1 +1,0 @@
-# xingej-thrift
