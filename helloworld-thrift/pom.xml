@@ -17,6 +17,8 @@
         <module>threadpool-msg-thrift-client</module>
         <module>nonblocking-msg-thrift-server</module>
         <module>nonblocking-msg-thrift-client</module>
+        <module>hsha-msg-thrift-server</module>
+        <module>hsha-msg-thrift-client</module>
     </modules>
 
 
