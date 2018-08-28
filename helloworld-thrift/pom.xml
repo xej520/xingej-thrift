@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>msg-thrift-api</module>
-        <!--<module>msg-thrift-service</module>-->
         <module>single-msg-thrift-server</module>
         <module>single-msg-thrift-client</module>
         <module>threadpool-msg-thrift-server</module>
@@ -19,6 +18,8 @@
         <module>nonblocking-msg-thrift-client</module>
         <module>hsha-msg-thrift-server</module>
         <module>hsha-msg-thrift-client</module>
+        <module>asyn-msg-thrift-server</module>
+        <module>asyn-msg-thrift-client</module>
     </modules>
 
 
