@@ -1,4 +1,4 @@
-    继续测试练习thrift  
+   >继续测试练习thrift  
 # 环境说明  
 - windows 10
 - Intellij IDEA  
@@ -95,11 +95,63 @@
 
 ## 测试  
 - 启动服务器端 
-- 启动客户端
+- 启动客户端   
 
+&nbsp;
+&nbsp;  
+&nbsp;  
+&nbsp;  
+  
 
+> 将服务端更改spring-boot 版本  
+> 也就是更新java-thrift-server 模块  
 
+- 更新java-thrift-server模块的pom文件，为下面的形式  
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <!-- 添加spring-boot-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.3.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>java-thrift-server</artifactId>
+
+    <dependencies>
+        <!-- 添加spring-boot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.test.thrift</groupId>
+            <artifactId>java-thrift-idl</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
+
+```  
+- 添加appliaction.properties配置文件  
+> server.name=java-thrift-service
+  server.port=8082 
+
+- 更新FormatDataImpl文件，添加@Service注解，也就是交给spring 管理起来  
+
+- 创建thirift_socket包，创建ThriftServer文件，编写Thrift逻辑  
+  - 可能会报错，如果是could not autowire. no bean of Iface的话，可以不用管  
+- 更新server文件，添加上@SpringBootApplication 注解，表明是启动类   
+
+- 测试
+    > 启动服务端  
+      启动客户端
 
 
 
