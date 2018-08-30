@@ -80,7 +80,7 @@
 ![](https://note.youdao.com/yws/public/resource/9c8584c6ec980aee585665c38a65bf9d/xmlnote/42EAB0BE237340D6A8989EEF383753DE/20079)
 - 注意生成的代码是有问题的[原因具体不详]  
   - 在hw.go文件中 oprot.Flush()抛异常，not enough arguments in call to oprot.Flush less... (Ctrl+F1)  
-  - 解决措施：原因是缺少context.Context类型的参数，刚好方法中已经有，直接添加上就看了，改成oprot.Flush(ctx)  
+  - 解决措施：原因是缺少context.Context类型的参数，刚好方法中已经有，直接添加上就可以了，改成oprot.Flush(ctx)  
 - 将生成的代码库pkg 拷贝到gopath的src路径下，这样客户端就可以使用代码库了，不然有可能找不到生成的代码库
 
 ## 创建maven模块，用于创建服务端  
