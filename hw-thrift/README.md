@@ -140,7 +140,7 @@
 
 ```  
 - 添加appliaction.properties配置文件  
-> server.name=java-thrift-service
+> server.name=java-thrift-service  
   server.port=8082 
 
 - 更新FormatDataImpl文件，添加@Service注解，也就是交给spring 管理起来  
